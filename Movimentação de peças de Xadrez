@@ -1,0 +1,65 @@
+/*
+====================================================
+Projeto: Simulação de Movimentos no Xadrez
+Autor: [Juan Carvalho]
+Data: [21/09/2025]
+Descrição:
+    Este programa em C simula os movimentos de três
+    peças do xadrez: Torre, Bispo e Rainha.
+    
+    O objetivo é aplicar estruturas de repetição 
+    (for, while e do-while) para simular a lógica 
+    de movimentação no tabuleiro.
+
+Peças simuladas:
+    - Torre: 5 casas para a direita (for)
+    - Bispo: 5 casas na diagonal (Cima + Direita) (while)
+    - Rainha: 8 casas para a esquerda (do-while)
+
+Observação:
+    Este programa não implementa todas as regras
+    do jogo de xadrez. Apenas simula movimentos
+    individuais de peças conforme solicitado.
+====================================================
+*/
+
+#include <stdio.h>
+
+int main() {
+    // ================================
+    // Simulação do movimento da Torre
+    // Estrutura utilizada: for
+    // A Torre anda 5 casas para a direita
+    // ================================
+    int i;
+    for (i = 1; i <= 5; i++) {
+        printf("Direita\n");
+    }
+
+    // ================================
+    // Simulação do movimento do Bispo
+    // Estrutura utilizada: while
+    // O Bispo anda 5 casas na diagonal (Cima + Direita)
+    // ================================
+    int j = 1;
+    while (j <= 5) {
+        printf("Cima Direita\n");
+        j++;
+    }
+
+    // ================================
+    // Simulação do movimento da Rainha
+    // Estrutura utilizada: do-while
+    // A Rainha anda 8 casas para a esquerda
+    // ================================
+    int k = 1;
+    do {
+        printf("Esquerda\n");
+        k++;
+    } while (k <= 8);
+
+    // ================================
+    // Fim do programa
+    // ================================
+    return 0;
+}
