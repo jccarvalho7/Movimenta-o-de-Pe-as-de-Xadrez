@@ -23,3 +23,7 @@ Cada movimento deve ser exibido no console usando `printf`.
 ---
 
 ## 📂 Estrutura do Projeto
+xadrez/
+├── xadrez.c
+└── README.md
+
